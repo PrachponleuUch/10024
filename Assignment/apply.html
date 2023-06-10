@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ASSIGNMENT1" />
+    <meta name="keywords" content="HTML5, CSS" />
+    <meta name="author" content="Prachponleu Uch"  />
+    <link rel="stylesheet" href="styles/desktop.css"/>
+    <link rel="stylesheet" href="styles/mobile.css"/>
+    <script src="scripts/enhancements.js"></script>
+    <script src="scripts/apply.js"></script>
+    <title>ASSIGNMENT1 JOBS APPLICATION PAGE</title>
+    
+</head>
+<body>
+    <header id="APPLY">
+        <h1>
+            CTS JOBS APPLICATION
+        </h1>
+        <hr>
+            <h1><strong>Ceylon Textile Suppliers</strong></h1>
+            <h2>MENU</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="job.html">Jobs</a>
+                <a href="apply.html">Apply</a>
+                <a href="about.html">About</a>
+                <a href="enhancement.html">Enhancement</a>
+                <a href="enhancement2.html">Enhancement2</a>
+            </nav>
+        <hr/>
+    </header>
+    <div id = "clock" onload="currentTime()"></div>
+    <div id="ten-countdown"></div>
+    <main class="APPLY">
+    <form id="regform" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="post">
+        <input type="hidden" name="Job_Reference" id="JRef">
+        <p>
+            <label for="Job_Reference">Job reference number:* 
+                <input id="Job_Reference" type="text" name="Job_Reference" pattern="[A-Za-z0-9\s]{5}" required>
+            </label>
+        </p>
+
+        <p>
+            <label for="First_Name">First Name:* 
+                <input id="First_Name" type="text" name="First_Name" pattern="[A-Za-z\s]{1,20}" required>
+            </label>
+        </p>
+        
+        <p>
+            <label for="Last_Name">Last Name:* 
+                <input id="Last_Name" type="text" name="Last_Name" pattern="[A-Za-z\s]{1,20}" required>
+            </label>
+        </p>
+
+        <p>
+            <label for="DOB">Date of Birth:* </label>
+            <input id="DOB" type="text" name="DOB" required>
+        </p>
+
+        <fieldset id="Gender">
+            
+                <legend>Gender:*</legend>
+                <input type="radio" name="Gender" id="gm" value="Male" required>Male 
+                <input type="radio" name="Gender" id="gf" value="Female" required>Female 
+            
+        </fieldset>
+
+        <p><label for="Street_Address">Street_Address:* </label><input id="Street_Address" type="text" maxlength="40" required></p>
+
+        <p><label for="Suburb/Town">Suburb/Town:* </label><input id="Suburb/Town" type="text" maxlength="40"></p>
+
+        <p>
+            <label for="State">State:* </label>
+            <select id="State" name="State">
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="Postcode">Postcode:* </label>
+            <input name="Postcode" id="Postcode" type="text" pattern="[0-9]{4}" required>
+        </p>
+
+        <p>
+            <label for="Email">Email:* </label>
+            <input id="Email" type="email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></p>
+
+        <p>
+            <label for="phone">Phone number:* </label>
+            <input type="tel" id="phone" name="Phone" pattern="[0-9\s]{8,12}" required>
+        </p>
+
+        <p>
+            <label>
+                Skill List:* </label><br>
+                <input type="checkbox" name="Skill[]" value="HTML" id = "Skill1">
+                <label for="Skill1"> HTML</label><br>
+                <input type="checkbox" name="Skill[]" value="CSS" id = "Skill2">
+                <label for="Skill2"> CSS</label><br>
+                <input type="checkbox" name="Skill[]" value="JAVA" id = "Skill3">
+                <label for="Skill3"> JAVA</label><br>
+                <input type="checkbox" name="Skill[]" value="C" id = "Skill4">
+                <label for="Skill4"> C</label><br>
+                <input type="checkbox" name="Skill[]" value="Other" id = "Skill5">
+                <label for="Skill5"> OTHER SKILLS:</label><br>
+        </p>
+
+        <p>
+            <label>Other Skills: </label><br>
+            <textarea id="Comment" name="Comments" cols="60" rows="5"></textarea>
+        </p>
+        <span id="error"></span>
+        <p>
+            <input type="Submit" value="Apply">
+            <input type="Reset" value="Reset">
+        </p>
+    </form>
+</main>
+<footer>
+    <a href="mailto:(103518056@student.swin.edu.au)">CONTACT US</a>
+    <aside>
+    &copy; Copyright 2022, Ceylon Textile Suppliers
+    </aside>
+    <a class="LINK" href="index.html">Home Page</a>
+</footer>
+</body>
+</html>

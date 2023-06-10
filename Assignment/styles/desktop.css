@@ -1,0 +1,153 @@
+/*   
+filename:  desktop.css
+author: Prachponleu Uch
+studentid: 103518056  
+*/ 
+@media screen and (min-width: 1024px)
+{
+    *{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: hsl(8, 100%, 59%);
+    }
+
+    main{
+        background-color: hsl(0, 19%, 95%);
+    }
+    header {
+        text-align: center;
+    }
+    nav a
+    {
+        text-decoration: none;
+        padding: 0.2em 0.6em;
+        border: 2px solid  hsl(9, 81%, 61%);
+    }
+    
+    section .INDEX {      
+        text-align: center;
+    }
+
+    .LOGO{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+    }
+
+    footer{
+        text-align: center;
+    }
+    
+    nav a:hover
+    {
+        background-color: lightgoldenrodyellow;
+        border: 2px solid green;
+        color: green;
+    }
+
+    section{
+        padding: 10px;
+        border: 5px solid hsl(9, 81%, 61%);
+        margin: 0;
+    }
+
+    section p, ol li, ul li,dd {
+        color: hsl(7, 74%, 79%);
+    }
+
+    .APPLY{
+        padding: 10px;
+        border: 5px solid hsl(9, 81%, 61%);
+        margin: 0;
+    }
+
+    footer a:hover{
+        background-color: lightgoldenrodyellow;
+        border: 2px solid green;
+        color: green;
+    }
+
+    figure img{
+        float: right;
+        border: 2px solid hsl(9, 81%, 61%);
+    }
+
+    figure{
+        float: right;
+        text-align: center;
+    }
+
+    @keyframes fade {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes RGB {
+        0%   {background-color: hsl(0, 19%, 95%);}
+        50%  {background-color: hsl(7, 74%, 79%);}
+        100% {background-color: rgb(220, 94, 56);}
+    }
+
+    #JOB{
+        animation: fade 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+        background-image: url('../images/1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 70px;
+    }
+
+    #INDEX{
+        animation: fade 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+        background-image: url('../images/3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    #ENHANCEMENT{
+        animation: fade 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+        background-image: url('../images/5.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 70px;
+    }
+
+    #APPLY {
+        animation: fade 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+        background-image: url('../images/4.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100px;
+    }
+
+    #ABOUT{
+        animation: RGB 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    table, th, td{
+        border: 1px solid;
+    }
+
+    .JOB .JOB{
+        float: right;
+    }
+
+    #clock
+    {
+        color:blueviolet;
+    }
+}
